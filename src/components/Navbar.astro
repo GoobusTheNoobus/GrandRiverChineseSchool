@@ -1,0 +1,30 @@
+---
+import '../style.css'
+
+interface Props {
+    lang: 'en' | 'zh';
+}
+
+let {lang} = Astro.props;
+---
+
+
+<nav>
+    <div class="registration">
+        {lang == 'zh' ? <p>新学年的注册工作已经开始，相关链接在<a href="/registration/">此页面</a>。</p> : ""}
+    </div>
+
+</nav>
+
+<style>
+    .registration {
+        width: 100vw;
+        background-color: var(--color-surface);
+        margin-top: 0rem;
+        margin-bottom: auto;
+        padding: 3px 1rem;
+
+        border-bottom: 1px solid var(--color-separator);
+        text-align: center;
+    }
+</style>

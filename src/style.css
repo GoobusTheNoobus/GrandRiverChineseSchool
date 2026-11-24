@@ -1,0 +1,54 @@
+/* ------------------------ Global styles  ------------------------ */
+
+:root {
+    --color-background: #ffffff;
+    --color-surface: #f3f6f8;
+
+    --color-text: #121212;
+    --color-separator: #4f4f4f;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Noto Sans, sans-serif;
+    font-size: 1.1rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-background);
+    color: var(--color-text)
+}
+
+main {
+    max-width: 75rem;
+    margin: 3rem auto 3rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+/* ------------------------ Title Pages  ------------------------ */
+
+.title-en ,.title-zh {
+    text-align: center;
+}
+
+.title-en {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.title-zh {
+    font-size: 4rem;
+    margin: 1rem auto 1rem;
+    padding-bottom: 2rem;
+
+    border-bottom: var(--color-separator) 1px solid;
+}
