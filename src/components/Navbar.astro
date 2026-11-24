@@ -17,14 +17,23 @@ let {lang} = Astro.props;
 </nav>
 
 <style>
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     .registration {
-        width: 100vw;
         background-color: var(--color-surface);
         margin-top: 0rem;
-        margin-bottom: auto;
-        padding: 3px 1rem;
+        padding: 0 1rem;
 
         border-bottom: 1px solid var(--color-separator);
         text-align: center;
+    }
+
+    .registration p {
+        margin: 6px 0;
+        color: var(--color-text-light);
     }
 </style>
