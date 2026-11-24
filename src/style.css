@@ -1,16 +1,17 @@
 /* ------------------------ Global styles  ------------------------ */
 
 :root {
-    --color-background: #ffffff;
-    --color-surface: #f3f6f8;
+    --color-background: #fdfdff;
+    --color-surface: #ecf3f8;
 
     --color-text: #121212;
     --color-separator: #d3cccc;
 
-    --color-link: #5250a4;
-    --color-link-hover: #6a68cf;
+    --color-link: #5068a4;
+    --color-link-hover: #3f507f;
 
-    --color-text-light: #525252;
+    --color-text-light: #32354b;
+    --color-text-mute: #4f4f4f;
 }
 
 html, body {
@@ -31,7 +32,7 @@ body {
 }
 
 main {
-    max-width: 60rem;
+    max-width: 64rem;
     margin: 2rem auto 3rem;
     padding: 1rem;
 }
@@ -46,11 +47,13 @@ h1, h2, h3 {
 
 a {
     color: var(--color-link);
-    transition: 150ms;
+    text-decoration: none;
+    transition: 200ms;
 }
 
 a:hover {
     color: var(--color-link-hover);
+    text-decoration: underline;
 }
 
 
@@ -61,14 +64,14 @@ a:hover {
 }
 
 .title-en {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .title-zh {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0rem auto 1rem;
     padding-bottom: 2rem;
 

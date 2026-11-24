@@ -13,7 +13,6 @@ let {lang} = Astro.props;
     <div class="registration">
         {lang == 'zh' ? <p>新学年的注册工作已经开始，相关链接在<a href="/registration/">此页面</a>。</p> : ""}
     </div>
-
 </nav>
 
 <style>
@@ -28,6 +27,7 @@ let {lang} = Astro.props;
         margin-top: 0rem;
         padding: 0 1rem;
 
+        border-top: 1px solid var(--color-separator);
         border-bottom: 1px solid var(--color-separator);
         text-align: center;
     }
@@ -36,4 +36,6 @@ let {lang} = Astro.props;
         margin: 6px 0;
         color: var(--color-text-light);
     }
+
+    * { box-sizing: border-box; }
 </style>
